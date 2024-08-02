@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Service</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome Icons -->
+
+<style>
+
+    /* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li {
+    margin: 0;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 18px;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+section {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+section h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+section p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form textarea,
+form input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+}
+
+form .btn-submit {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form .btn-submit:hover {
+    background-color: #0056b3;
+}
+
+.stars {
+    display: flex;
+    gap: 5px;
+    font-size: 24px;
+    color: #ffd700;
+}
+
+aside.customer-care {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+aside.customer-care h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+aside.customer-care p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.chatbot {
+    margin-top: 20px;
+}
+
+.chatbot .chat-window {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.chatbot .chat-header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.chatbot .chat-body {
+    padding: 10px;
+    height: 150px;
+    overflow-y: auto;
+}
+
+.chatbot .chat-message {
+    margin-bottom: 10px;
+}
+
+.chatbot .chat-message.bot {
+    color: #333;
+}
+
+.chatbot .chat-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+}
+
+</style>
+
+</head>
+<body>
+    <div class="container" style="background-color: #e0d7d7;">
+        <header>
+            <h1>Customer Service</h1>
+        </header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#rating">Rating</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+                <li><a href="#complaint">Complaint</a></li>
+                <li><a href="#review">Review Products</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="rating">
+                <h2>Rate Our Service</h2>
+                <p>Please rate our service:</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </section>
+            <section id="feedback">
+                <h2>Feedback</h2>
+                <p>We value your feedback:</p>
+                <form>
+                    <textarea placeholder="Enter your feedback here..."></textarea>
+                    <button type="submit" class="btn-submit">Submit</button>
+                </form>
+            </section>
+            <section id="complaint">
+                <h2>File a Complaint</h2>
+                <p>Having an issue? Let us know:</p>
+                <form>
+                    <input type="text" placeholder="Enter your complaint..." required>
+                    <button type="submit" class="btn-submit">Submit</button>
+                </form>
+            </section>
+            <section id="review">
+                <h2>Review Products</h2>
+                <p>Share your thoughts on our products:</p>
+                <form>
+                    <input type="text" placeholder="Product Name" required>
+                    <textarea placeholder="Enter your review here..." required></textarea>
+                    <button type="submit" class="btn-submit">Submit</button>
+                </form>
+            </section>
+        </main>
+        <aside class="customer-care">
+            <h3>Customer Care</h3>
+            <p>Call us at: <strong>1-800-123-4567</strong></p>
+            <p>Email: <strong>stemleather@gmail.com</strong></p>
+            <div class="chatbot">
+                <h3>Chat with us</h3>
+                <div class="chat-window">
+                    <div class="chat-header">Customer Support</div>
+                    <div class="chat-body">
+                        <p class="chat-message bot">Hello! How can we assist you today?</p>
+                    </div>
+                    <input type="text" class="chat-input" placeholder="Type your message...">
+                </div>
+            </div>
+        </aside>
+    </div>
+</body>
+</html>

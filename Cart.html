@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Your E-commerce Website</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* styles.css */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('background.jpg'); /* Replace with your actual background image path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.empty-cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-image {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.message {
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.sub-message {
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.btn-shop {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.btn-shop a {
+    color: white;
+    text-decoration: none;
+}
+
+.btn-shop:hover {
+    background-color: #0056b3;
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>My Cart</h1>
+        <div class="empty-cart">
+            <img src="Images/Empty_cart.png" alt="Empty Cart" class="cart-image"> <!-- Replace with actual image path -->
+            <p class="message">Your cart is currently empty! </p>
+            <p class="sub-message">Add something to your cart to proceed with buying.</p>
+            <button class="btn-shop"><a href="Top_Deals.html">Go to Shop</a></button>
+        </div>
+    </div>
+</body>
+
+</html>

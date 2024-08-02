@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Deals</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+
+        /* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2e9ca;
+}
+
+.top-deals {
+    max-width: 1200px;
+    min-height: 500px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    position: relative;
+    top: 40px;
+}
+
+.top-deals h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    position: relative;
+    top: 45px;;
+}
+
+.product-card {
+    flex: 1 1 calc(25% - 20px);
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.product-card .discount {
+    color: #ff6347;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.product-card:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+    </style>
+</head>
+<body>
+    <section class="top-deals">
+        <!-- <h2>Top Deals</h2> -->
+        <img src="Images/Topdeals.jpeg" alt="Top Deals" style="margin-left: 38%;">
+        <div class="product-grid">
+            <!-- First Row of Products -->
+            <div class="product-card">
+                <img src="Images/Black_sandal.png" alt="Product 1" style="width: 169px; height: 225px;">
+                <h3>Sandals</h3>
+                <p class="discount">20% off</p>
+            </div>
+            <div class="product-card">
+                <img src="Images/Bluebg_shoes.png" alt="Product 2" style="width: 169px; height: 225px;">
+                <h3>Shoes</h3>
+                <p class="discount">15% off</p>
+            </div>
+            <div class="product-card">
+                <img src="Images/Belt.png" alt="Product 3" style="width: 169px; height: 225px; ">
+                <h3>Belts</h3>
+                <p class="discount">30% off</p>
+            </div>
+            <div class="product-card">
+                <img src="Images/School_bags.jpeg" alt="Product 4" style="width: 169px; height: 225px; ">
+                <h3>Bags</h3>
+                <p class="discount">25% off</p>
+            </div>
+        </div>
+        <div class="product-grid">
+            <!-- Second Row of Products -->
+            <div class="product-card">
+                <img src="Images/Newmens_wallet.jpeg" alt="Product 5"  style="width: 169px; height: 225px;">
+                <h3>Men's Wallet</h3>
+                <p class="discount">10% off</p>
+            </div>
+            <div class="product-card">
+                <img src="Images/Womens_wallet.jpeg" alt="Product 6" style="width: 169px; height: 225px;">
+                <h3>Women's Wallet</h3>
+                <p class="discount">5% off</p>
+            </div>
+            <div class="product-card">
+                <img src="Images/Jacket.png" alt="Product 7" style="width: 169px; height: 225px;">
+                <h3>Jackets</h3>
+                <p class="discount">40% off</p>
+            </div>
+            <div class="product-card">
+                <img src="Images/Vegan_fabrics.jpeg" alt="Product 8" style="width: 169px; height: 225px;">
+                <h3>Fabrics</h3>
+                <p class="discount">35% off</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
